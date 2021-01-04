@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Main from './Component/main';
+import Frame from './Component/frame';
+
+window.page = "mission";
+window.progress = 0;
 
 ReactDOM.render(
-  <Main />,
+  <Frame />,
   document.getElementById('root')
 );
 
