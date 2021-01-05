@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+*{
+  padding: 0;
+  margin: 0;
+}
+
 h1 {
   font-weight: 800;
   text-shadow: 0 0 0;
@@ -19,11 +24,15 @@ h1 {
 
 h3 {
   font-family: 'wt014';
-  font-size: 26;
+  font-size: 18px;
   text-align: center;
-  margin-bottom: 0;
-  margin-top: 10;
-  color: #1F5AD2;
+  color: #6747c9;
+  margin: 5% 5% 3% 5%;
+  font-weight: 700;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 h1,h2,h4,h5,h6,p {
@@ -45,9 +54,10 @@ p {
 }
 
 h2{
-  margin: 0 5%;
+  color: #541a8b;
+  margin: 3% 5%;
   padding: 0;
-  font-size: 28;
+  font-size: 20px;
   font-weight: 700;
   display: block;
   text-overflow: ellipsis;
@@ -55,13 +65,42 @@ h2{
   white-space: nowrap;
 }
 
+.header{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 60px;
+  background: linear-gradient(135deg, #50c8ff, #da50ff);
+}
+
+.content{
+  width: 100%;
+  top: 60px;
+  bottom: 70px;
+  position: absolute;
+  overflow: auto;
+  text-align: center;
+}
+
+.footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  height: 70px;
+}
+
 li.block{
-  margin: 2% 0;
+  margin: 7% 0;
   border: #9796ff 1px solid;
   border-radius: 10px;
-  color: #9796ff;
   box-shadow: 5px 5px rgbA(250,80,255,0.2);
-  position: relative
+  position: relative;
+}
+
+li.block h2{
+  text-align: left;
 }
 
 li.block a{
@@ -77,4 +116,32 @@ li.block img{
   left: 0;
   top: 0;
   height: 100%;
+}
+
+.itemView{
+  z-index: 0;
+  position: fixed;
+  max-height: 65%;
+  width: 70%;
+  background: #ffffff;
+  border:#8a96ff double;
+  text-align: center;
+  overflow: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.itemView img{
+  width: 100%;
+}
+.itemView a{
+  text-decoration: none;
+  margin: 5% auto;
+  padding: 5% 0;
+  border: #9796ff 1px solid;
+  color: #5c0075;
+  box-shadow: 3px 3px rgbA(250,80,255,0.2);
+  font-weight: 700;
+  display: block;
+  width: 50%;
 }

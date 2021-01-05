@@ -5,6 +5,8 @@ import Frame from './Component/frame';
 
 window.page = "mission";
 window.progress = 0;
+window.item = 6;
+window.story = 1;
 
 ReactDOM.render(
   <Frame />,
